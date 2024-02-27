@@ -31,6 +31,7 @@ const Header = () => {
             <MobileNav />
           </SignedIn>
           <SignedOut>
+            {/* to be removed if user is logged in */}
             <Button asChild className="rounded-full" size="lg">
               <Link href="/sign-in">Login</Link>
             </Button>
