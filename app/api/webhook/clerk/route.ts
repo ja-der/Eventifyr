@@ -7,9 +7,10 @@ import { NextResponse } from 'next/server'
  
 export async function POST(req: Request) {
  
-  // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
+  // Get the secret from the .env file
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET
  
+  // If there is no secret, error out
   if (!WEBHOOK_SECRET) {
     throw new Error('Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local')
   }
@@ -20,7 +21,6 @@ export async function POST(req: Request) {
   const svix_timestamp = headerPayload.get("svix-timestamp");
   const svix_signature = headerPayload.get("svix-signature");
  
-  // If there are no headers, error out
   if (!svix_id || !svix_timestamp || !svix_signature) {
     return new Response('Error occured -- no svix headers', {
       status: 400
