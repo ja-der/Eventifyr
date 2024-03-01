@@ -2,10 +2,11 @@
 
 import { revalidatePath } from 'next/cache'
 
-import { connectToDatabase } from '@/lib/database'
-import User from '@/lib/database/models/user.model'
-import Order from '@/lib/database/models/order.model'
-import Event from '@/lib/database/models/event.model'
+import { connectToDatabase } from '@/lib/mongo.db/database'
+
+import User from '@/lib/mongo.db/database/models/user.model'
+import Order from '@/lib/mongo.db/database/models/order.model'
+import Event from '@/lib/mongo.db/database/models/event.model'
 import { handleError } from '@/lib/utils'
 
 import { CreateUserParams, UpdateUserParams } from '@/types'
