@@ -50,6 +50,12 @@ export default function Home() {
             to showcasing the multitude of events that contribute to the lively
             spirit of this remarkable city. <br />
             <br />
+            <img
+              src="/assets/images/ottawa-sign.png"
+              alt="ottawa sign"
+              className="object-contain object-center"
+            />{" "}
+            <br />
             At Eventifyr, we curate a comprehensive calendar featuring a wide
             range of events, from arts and entertainment to sports and community
             gatherings. Whether you're a local looking for new experiences or a

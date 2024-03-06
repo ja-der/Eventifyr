@@ -8,7 +8,7 @@ export const headerLinks = [
       route: '/events/create',
     },
     {
-      label: 'Broswe Events',
+      label: 'Browse Events',
       route: '/browse',
     },
   ]
