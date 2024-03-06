@@ -16,7 +16,7 @@ export default function Home() {
               more than meets the eye.
             </p>
             <Button size="lg" asChild className="button w-full sm:w-fit">
-              <Link href="#events">Learn more about your next experience</Link>
+              <Link href="/browse">Find your next Adventure</Link>
             </Button>
           </div>
 
@@ -75,16 +75,7 @@ export default function Home() {
             being boring, Eventifyr is your ally in uncovering the countless
             reasons why this city is a thriving and dynamic place to live, work,
             and play. Embrace the diversity of Ottawa's events with Eventifyr –
-            where the pulse of the city comes to life! <br />
-            <br />
-            Join the movement to redefine Ottawa's image with Eventifyr as your
-            trusted companion. Our platform is designed to empower you to
-            explore the city's vibrant events scene and make the most of your
-            time in the nation's capital. Ottawa may have been underestimated in
-            the past, but with Eventifyr, you'll never miss a beat in this
-            exciting and evolving city. Let the adventure begin, and let
-            Eventifyr be your guide to the extraordinary events that await you
-            in Ottawa!
+            where the pulse of the city comes to life!
           </p>
         </div>
       </section>

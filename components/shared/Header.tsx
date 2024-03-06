@@ -30,6 +30,9 @@ const Header = () => {
             <MobileNav />
           </SignedIn>
           <SignedOut>
+            <nav className="md:flex-between hidden w-full max-w-xs">
+              <NavItems />
+            </nav>
             <Button asChild className="rounded-full" size="lg">
               <Link href="/sign-in">Login</Link>
             </Button>
