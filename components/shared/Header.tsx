@@ -24,14 +24,12 @@ const Header = () => {
             <NavItems />
           </nav>
         </SignedIn>
-
         <div className="flex w-32 justify-end gap-3">
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
             <MobileNav />
           </SignedIn>
           <SignedOut>
-            {/* to be removed if user is logged in */}
             <Button asChild className="rounded-full" size="lg">
               <Link href="/sign-in">Login</Link>
             </Button>

@@ -3,11 +3,9 @@
 // so we are using a react hook form by shadCN
 
 import React from "react";
-
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-
+import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -19,6 +17,8 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { formSchema } from "@/lib/mongo.db/database/validator";
+import { eventDefaultValues } from "@/constants";
 
 type EventFormProps = {
   userID: string;
@@ -26,12 +26,11 @@ type EventFormProps = {
 };
 
 const EventForm = ({ userID, type }: EventFormProps) => {
-  // 1. Define your form.
+  const initialValues = eventDefaultValues;
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-    },
+    defaultValues: {},
   });
 
   // 2. Define a submit handler.
@@ -42,23 +41,27 @@ const EventForm = ({ userID, type }: EventFormProps) => {
   }
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="flex flex-col gap-5"
+      >
         <FormField
           control={form.control}
-          name="username"
+          name="title"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel>Username</FormLabel>
+            <FormItem className="w-full">
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input
+                  placeholder="Event title"
+                  {...field}
+                  className="input-field"
+                />
               </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
+        Genertic Event Description
         <Button type="submit">Submit</Button>
       </form>
     </Form>

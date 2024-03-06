@@ -37,9 +37,7 @@ export default function Home() {
         <h2 className="h2-bold">
           A Collection <br /> of the Hottest Events
         </h2>
-        <div className="flex w-full flex-col gap-5 md:flex-row">
-          Search CategoryFilter
-        </div>
+        <div className="flex w-full flex-col gap-5 md:flex-row">About Us</div>
       </section>
     </main>
   );
