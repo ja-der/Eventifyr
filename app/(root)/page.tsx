@@ -16,7 +16,7 @@ export default function Home() {
               more than meets the eye.
             </p>
             <Button size="lg" asChild className="button w-full sm:w-fit">
-              <Link href="#events">Find your next experience</Link>
+              <Link href="#events">Learn more about your next experience</Link>
             </Button>
           </div>
 

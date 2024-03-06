@@ -1,20 +1,9 @@
-import { formatDateTime } from "@/lib/utils";
-import { auth } from "@clerk/nextjs";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
-type CardProps = {
-  hasOrderLink?: boolean;
-  hidePrice?: boolean;
-};
-
 const Card = () => {
-  const { sessionClaims } = auth();
-  const userId = sessionClaims?.userId as string;
-
   return (
-    <div className="group relative flex min-h-[380px] w-full max-w-[400px] flex-col overflow-hidden rounded-xl bg-white shadow-md transition-all hover:shadow-lg md:min-h-[438px]">
+    <div className="group relative flex min-h-[380px] w-full max-w-[400px] flex-col overflow-hidden rounded-3xl bg-gradient-to-br from-#624CF5 via-#8169F8 to-#9E87FB border-4 border-#624CF5 hover:shadow-2xl md:min-h-[438px]">
       <Image
         src="/assets/images/parliament.jpg"
         alt="parliament building"
@@ -25,23 +14,26 @@ const Card = () => {
 
       <div className="flex min-h-[230px] flex-col gap-3 p-5 md:gap-4">
         <div className="flex gap-2">
-          <p className="p-semibold-14 w-min rounded-full bg-purple-500/50 px-4 py-1 text-grey-500 line-clamp-1">
+          <p className="p-semibold-14 w-min rounded-full bg-blue-500/50 px-4 py-1 text-black">
             FREE
           </p>
         </div>
 
-        <Link href={`/events/`}>
-          <p className="p-medium-16 md:p-medium-20 line-clamp-2 flex-1 text-black">
-            Visit the Parliament building
-          </p>
-        </Link>
+        <p className="p-medium-16 md:p-medium-20 line-clamp-2 flex-1 text-black">
+          Visit the Parliament building
+        </p>
 
         <div className="flex-between w-full">
           <p className="p-medium-14 md:p-medium-16 text-grey-600">
-            Organized by Bob Smith
+            Explore Ottawa's Parliament Building, a stunning example of Gothic
+            Revival architecture. Admire the iconic Peace Tower, intricate stone
+            carvings, and historic chambers like the House of Commons. Don't
+            miss the Changing of the Guard ceremony during the summer months.
+            Discover Canada's political history through guided tours in this
+            symbolic seat of government.
           </p>
         </div>
-        <p className="p-medium-16 p-medium-18 text-grey-500">Learn More</p>
+        <a className="p-medium-16 p-medium-18 text-grey-500">Learn More</a>
       </div>
     </div>
   );
