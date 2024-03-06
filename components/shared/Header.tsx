@@ -30,12 +30,14 @@ const Header = () => {
             <MobileNav />
           </SignedIn>
           <SignedOut>
-            <nav className="md:flex-between hidden w-full max-w-xs">
-              <NavItems />
-            </nav>
-            <Button asChild className="rounded-full" size="lg">
-              <Link href="/sign-in">Login</Link>
-            </Button>
+            <div className="flex gap-96">
+              <nav className="md:flex-between hidden w-full max-w-xs mx-auto">
+                <NavItems />
+              </nav>
+              <Button asChild className="rounded-full" size="lg">
+                <Link href="/sign-in">Login</Link>
+              </Button>
+            </div>
           </SignedOut>
         </div>
       </div>
