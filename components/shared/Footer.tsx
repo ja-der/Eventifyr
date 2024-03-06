@@ -14,7 +14,10 @@ const Footer = () => {
           />
         </Link>
 
-        <p>2024 Eventifyr. Jason Derulo was here.</p>
+        <p>
+          2024 Eventifyr. Creation by Jason Derulo <br />
+          (https://github.com/ja-der/eventifyr).
+        </p>
       </div>
     </footer>
   );

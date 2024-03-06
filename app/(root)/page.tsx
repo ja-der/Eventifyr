@@ -37,7 +37,50 @@ export default function Home() {
         <h2 className="h2-bold">
           A Collection <br /> of the Hottest Events
         </h2>
-        <div className="flex w-full flex-col gap-5 md:flex-row">About Us</div>
+        <div className="flex w-full flex-col gap-5 md:flex-row">
+          <p className="p-regular-16 md:p-regular-18">
+            Welcome to Eventifyr, your ultimate guide to unlocking the vibrant
+            and diverse world of events in Ottawa! Despite its reputation as one
+            of the "boringest" cities in Canada, Ottawa is a dynamic hub with a
+            thriving cultural scene and an array of exciting activities waiting
+            to be discovered. As the nation's capital and a home to federal
+            servants, Ottawa has often been overlooked, but Eventifyr is here to
+            change that perception. We believe that every city has its own
+            unique charm, and Ottawa is no exception. Our platform is dedicated
+            to showcasing the multitude of events that contribute to the lively
+            spirit of this remarkable city. <br />
+            <br />
+            At Eventifyr, we curate a comprehensive calendar featuring a wide
+            range of events, from arts and entertainment to sports and community
+            gatherings. Whether you're a local looking for new experiences or a
+            visitor eager to explore beyond the typical tourist attractions,
+            Eventifyr has you covered. Our goal is to highlight the richness of
+            Ottawa's cultural tapestry and provide a one-stop resource for
+            residents and visitors alike. Join us on a journey to redefine
+            Ottawa as a city bursting with excitement and opportunities, and let
+            Eventifyr be your passport to the best events in the capital.
+            <br />
+            <br />
+            Discovering the heartbeat of Ottawa has never been easier. Eventifyr
+            not only showcases major festivals and concerts but also highlights
+            the smaller, hidden gems that add character to the city. We believe
+            that every event, big or small, contributes to the unique tapestry
+            of Ottawa's cultural landscape. As we debunk the myth of Ottawa
+            being boring, Eventifyr is your ally in uncovering the countless
+            reasons why this city is a thriving and dynamic place to live, work,
+            and play. Embrace the diversity of Ottawa's events with Eventifyr –
+            where the pulse of the city comes to life! <br />
+            <br />
+            Join the movement to redefine Ottawa's image with Eventifyr as your
+            trusted companion. Our platform is designed to empower you to
+            explore the city's vibrant events scene and make the most of your
+            time in the nation's capital. Ottawa may have been underestimated in
+            the past, but with Eventifyr, you'll never miss a beat in this
+            exciting and evolving city. Let the adventure begin, and let
+            Eventifyr be your guide to the extraordinary events that await you
+            in Ottawa!
+          </p>
+        </div>
       </section>
     </main>
   );
