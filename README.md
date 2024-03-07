@@ -4,18 +4,25 @@ https://eventifyr.vercel.app/
 
 Welcome to Eventifyr, your go-to platform for discovering and tracking events in Ottawa! Whether you're a local resident or a visitor, Eventifyr is designed to make sure you never miss out on the vibrant and diverse events happening in the city.
 
-## Table of Contents
+## Preview
 
-- [Introduction](#eventifyr---find-your-next-event)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Contribute](#contribute)
-- [Feedback](#feedback)
-- [Contact](#contact)
-- [License](#license)
+### HomePage
 
-### Features
+<img style="center" src="./public/assets/screenshots/homepage.png"/> <img style="center" src="./public/assets/screenshots/description.png"/>
+
+### Account Sign-In/ Authentication
+
+<img style="center" src="./public/assets/screenshots/login-page.png"/>
+
+### Event Creation
+
+<img style="center" src="./public/assets/screenshots/create-page.png"/>
+
+### Event Browser
+
+<img style="center" src="./public/assets/screenshots/browse-page.png"/>
+
+## Features
 
 - **Event Discovery:** Explore a wide range of events happening in Ottawa, from concerts and festivals to art exhibitions and community gatherings.
 
@@ -23,7 +30,7 @@ Welcome to Eventifyr, your go-to platform for discovering and tracking events in
 
 - **Event Details:** Get comprehensive information about each event, including title, price, venue, and a brief description.
 
-### Getting Started
+## Getting Started
 
 To get started with Eventifyr, follow these simple steps:
 
