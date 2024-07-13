@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Eventifyr",
   description: "Find the hottest things to do in Ottawa.",
   icons: {
-    icon: "/app/favicon.ico",
+    icon: "/assets/images/logo.svg",
   },
 };
 

@@ -12,7 +12,7 @@ const Header = () => {
       <div className="wrapper flex items-center justify-between">
         <Link href="/" className="w-36">
           <Image
-            src="/assets/images/logo.png"
+            src="/assets/images/logo.svg"
             width={128}
             height={38}
             alt="Eventifyr Logo"
@@ -24,20 +24,16 @@ const Header = () => {
             <NavItems />
           </nav>
         </SignedIn>
+
         <div className="flex w-32 justify-end gap-3">
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
             <MobileNav />
           </SignedIn>
           <SignedOut>
-            <div className="flex gap-96">
-              <nav className="md:flex-between hidden w-full max-w-xs mx-auto">
-                <NavItems />
-              </nav>
-              <Button asChild className="rounded-full" size="lg">
-                <Link href="/sign-in">Login</Link>
-              </Button>
-            </div>
+            <Button asChild className="rounded-full" size="lg">
+              <Link href="/sign-in">Login</Link>
+            </Button>
           </SignedOut>
         </div>
       </div>

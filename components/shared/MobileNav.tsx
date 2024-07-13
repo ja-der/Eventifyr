@@ -1,7 +1,14 @@
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import Image from "next/image";
+import { Separator } from "../ui/separator";
 import NavItems from "./NavItems";
-import { Separator } from "@radix-ui/react-separator";
 
 const MobileNav = () => {
   return (
