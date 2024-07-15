@@ -15,7 +15,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { formSchema } from "@/lib/mongo.db/database/validator";
+import { formSchema } from "@/lib/database/validator";
 import { eventDefaultValues } from "@/constants";
 
 type EventFormProps = {
